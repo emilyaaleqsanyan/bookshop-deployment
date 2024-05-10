@@ -1,15 +1,4 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: postgres-config
-  labels:
-    db: bookshop-postgres
-data:
-  init.sql: |
-    CREATE DATABASE bookshopdb_catalog;
-    CREATE DATABASE bookshopdb_order;
 
----
 
 apiVersion: apps/v1
 kind: Deployment
